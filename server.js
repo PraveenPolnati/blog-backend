@@ -1,7 +1,7 @@
 const express = require('express');
 const mysql = require('mysql2');
 const bodyparser = require('body-parser');
-const cors = require('cors'); // Import cors
+const cors = require('cors'); 
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
@@ -11,7 +11,7 @@ const jwtSecret = process.env.JWT_SECRET;
 const app = express();
 const port = 3002;
 
-app.use(cors()); // Enable CORS
+app.use(cors());
 app.use(bodyparser.json());
 
 const connection = mysql.createConnection({
